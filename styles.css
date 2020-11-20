@@ -19,6 +19,7 @@ body {
 .categories {
   margin-top: 30px;
   margin-bottom: 50px;
+  padding: 0px 15px;
 }
 .row {
   margin: auto;
@@ -36,7 +37,7 @@ body {
   background-color: white;
   color: rgb(241,103,31);
   text-align: center;
-  width: 150px;
+  width: 155px;
   height: 60px;
   margin: auto;
   padding: 15px;
@@ -46,23 +47,46 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 @media (min-width: 408px) {
-  .row {
+  .category-row {
     width: 408px;
+    margin-left: calc((100% - 408px)/2);
+  }
+  .grid {
+    width: 408px;
+    margin-left: calc((100% - 378px)/2);
   }
 }
 @media (min-width: 608px) {
-  .row {
+  .category-row, .grid {
     width: 608px;
+  }
+  .category-row {
+    margin-left: calc((100% - 608px)/2);
+  }
+  .grid {
+    margin-left: calc((100% - 578px)/2);
   }
 }
 @media (min-width: 808px) {
-  .row {
+  .category-row, .grid {
     width: 808px;
+  }
+  .category-row {
+    margin-left: calc((100% - 808px)/2);
+  }
+  .grid {
+    margin-left: calc((100% - 778px)/2);
   }
 }
 @media (min-width: 1208px) {
-  .row {
+  .category-row, .grid {
     width: 1208px;
+  }
+  .category-row {
+    margin-left: calc((100% - 1208px)/2);
+  }
+  .grid {
+    margin-left: calc((100% - 1178px)/2);
   }
 }
 
@@ -78,4 +102,62 @@ footer {
   background-color: rgb(241,103,31);
   color: white;
   padding: 10px;
+}
+
+.category-page {
+  padding: 15px;
+}
+img {
+  margin: 5px;
+}
+
+.page-title {
+  position: absolute;
+  left: 50%;
+  top: 45;
+  transform: translate(-50%, -50%);
+  background-color: rgb(164,206,202);
+  height: 80px;
+  width: 200px;
+  padding-top: 10px;
+  display: inline-block;
+}
+.page-name {
+  background-color: white;
+  color: rgb(241,103,31);
+  text-align: center;
+  width: 155px;
+  height: 60px;
+  margin: auto;
+  padding: 15px;
+  border: 4px solid rgb(164,206,202);
+  border-style: double;
+  font-size: 16.5px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.grid {
+  margin-top: 25px;
+}
+
+.support-box {
+  position: relative;
+}
+.support {
+  width: 115px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 45px;
+  left: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) { 
+  .av-large-gap.av-fixed-size .av-masonry-entry .av-inner-masonry {
+    right: 0;
+  }
 }
