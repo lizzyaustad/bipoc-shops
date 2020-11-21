@@ -5,15 +5,17 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <link rel="shortcut icon" type="image/png" href='images/icon.png'/>
   </head>
   <body class='category-page'>
+    <div class="loader"></div>
     <a href='index.html'>
       <img style='width: 50px' src='images/home.png' />
     </a>
@@ -32,11 +34,10 @@
           <img style='width: 160px' src='images/eat+drink/chocolate.png' />
         </div>
       </a>
-      </a>
       <a target ='_blank' href='https://www.google.com/search?q=black+owned+restaurants+near+me'>
         <div class ='page-link grid-item'>
           <div class="support-box">
-            <img style="width: 180px; height: 150px;" src="images/eat+drink/restaurants.png">
+            <img style="width: 180px; height: 170px;" src="images/eat+drink/restaurants.png">
             <div class="support">SUPPORT BLACK-OWNED RESTAURANTS</div>
           </div>
         </div>
@@ -119,6 +120,9 @@
     </div>
 
     <script>
+      $(window).load(function() {
+        $(".loader").fadeOut("slow");
+      });
       $('.grid').imagesLoaded(function(){
         $('.grid').masonry({
           itemSelector: '.grid-item',
