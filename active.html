@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <link rel="shortcut icon" type="image/png" href='images/icon.png'/>
+    <title>active</title>
+  </head>
+  <body class='category-page'>
+    <div class="loader"></div>
+    <a href='index.html'>
+      <img style='width: 50px' src='images/home.png' />
+    </a>
+    <div class='page-title'>
+      <div class='page-name'>active</div>
+    </div>
+
+    <div class="grid">
+      <a target ='_blank' href='https://www.alvinailey.org/extension/online/workshops'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/alleyextension.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://elevenbyvenuswilliams.com/collections/accessories/products/action-cap-in-admiral'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/venuswilliams.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://elevenbyvenuswilliams.com/products/eleven-resistance-rope'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/resistanceropes.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.etsy.com/listing/788889799/power-button-tote-bag'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/tote.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.etsy.com/shop/MLNeiksDesignStudio'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/mlneiksdesign.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://jane.com/deal/1149767/fitness-dice-game'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/jane.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://trickstercompany.com/products/2015-basketball'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/basketball.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.theradblackkids.com/collections/skateboards'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/theradblackkids.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.etsy.com/listing/289083791/sisal-yarn-bucket-tote?ref=shop_home_active_14'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/yarnbucket.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.etsy.com/shop/TheDreamSleeve'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/dreamsleeve.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.mysolelyfit.com/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/mysolelyfit.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://kickymats.com/products/do-what-you-love-socks'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/kickymats.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://30andgold.com/collections/premium-active/products/restocked-erin-vintage-black-snakeskin-crop-bra-top-legging-set'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/active/30andgold.jpg' />
+        </div>
+      </a>
+    </div>
+
+    <script>
+      $(window).load(function() {
+        $(".loader").fadeOut("slow");
+      });
+      $('.grid').imagesLoaded(function(){
+        $('.grid').masonry({
+          itemSelector: '.grid-item',
+          columnWidth: 170
+        });
+      });
+    </script>
+  </body>
+</html>

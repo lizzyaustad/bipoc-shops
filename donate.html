@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <link rel="shortcut icon" type="image/png" href='images/icon.png'/>
+    <title>donate</title>
+  </head>
+  <body class='category-page'>
+    <div class="loader"></div>
+    <a href='index.html'>
+      <img style='width: 50px' src='images/home.png' />
+    </a>
+    <div class='page-title'>
+      <div class='page-name'>donate</div>
+    </div>
+
+    <div class="grid">
+      <a target ='_blank' href='https://www.mutualaidhub.org/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/mutualaidhub.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://thelovelandfoundation.org/loveland-therapy-fund/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/loveland.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://fairfight.com/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/fairfight.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.girltrek.org/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/girltrek.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.blackgirlscode.com/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/blackgirlscode.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://secure.actblue.com/donate/freeblackmamas2020'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/nationalbailout.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.knowyourrightscamp.com/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/knowyourrightscamp.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.thetenderfoundation.com/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/tender.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://eji.org/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/eji.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://marshap.org/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/marshapjohnson.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://mnfreedomfund.org/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/mff.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='http://cdfca.org/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/childrensdefensefund.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.navajowaterproject.org/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/navajo.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.migizi.org/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/migizi.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.embracerace.org/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/embracerace.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.navajohopisolidarity.org/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/navajohopisolidarity.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.theconsciouskid.org/donate'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/consciouskid.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.assatasdaughters.org/donate-1'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/donate/assatasdaughters.png' />
+        </div>
+      </a>
+    </div>
+
+    <script>
+      $(window).load(function() {
+        $(".loader").fadeOut("slow");
+      });
+      $('.grid').imagesLoaded(function(){
+        $('.grid').masonry({
+          itemSelector: '.grid-item',
+          columnWidth: 170
+        });
+      });
+    </script>
+  </body>
+</html>

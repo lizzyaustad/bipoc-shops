@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <link rel="shortcut icon" type="image/png" href='images/icon.png'/>
+    <title>silly</title>
+  </head>
+  <body class='category-page'>
+    <div class="loader"></div>
+    <a href='index.html'>
+      <img style='width: 50px' src='images/home.png' />
+    </a>
+    <div class='page-title'>
+      <div class='page-name'>silly</div>
+    </div>
+
+    <div class="grid">
+      <a target ='_blank' href='https://kickymats.com/collections/all'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/doormat.jpg' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.eatcomfortla.com/online-store/That-Sauce-c29642495'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/hotsauce.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://the-looke.com/collections/the-rich-auntie?page=1'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/rich.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://the125collection.com/collections/sweet/products/cupcakes-are-muffins-that-believed-in-miracles?variant=12892346253346'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/cupcakes.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://shop.adornedbychi.com/collections/all/products/i-like-bread-unisex-long-sleeve-t-shirt?variant=36247291527317'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/bread.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.thecoycollection.com/shop'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/cactus.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://rhymeantics.com/collections/products/products/rhyme-antics-game'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/rhymeantics.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://garden24.co/collections/stickers-1'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/joy.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://poshcandleco.com/products/allergic-to-bullshit'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/bullshit.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.blkmktvintage.com/collections/frontpage/products/vintage-starting-lineup-toys-chris-weber-latrell-sprewell-1990-s-1'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/basketball.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://poshcandleco.com/collections/sets/products/nope-eye-mask-ear-buds'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/nope.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.freeperiodpress.com/collections/stickers/products/motivational-sticker-pack-5-vinyl-decal-stickers'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/freeperiodpress.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.etsy.com/listing/884416714/dog-bandana-pet-bandana-christmas-gifts?ref=shop_home_active_2'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/dog.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.litsoulcandles.com/product-page/covfefe'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/silly/covfefe.png' />
+        </div>
+      </a>
+    </div>
+
+    <script>
+      $(window).load(function() {
+        $(".loader").fadeOut("slow");
+      });
+      $('.grid').imagesLoaded(function(){
+        $('.grid').masonry({
+          itemSelector: '.grid-item',
+          columnWidth: 170
+        });
+      });
+    </script>
+  </body>
+</html>
