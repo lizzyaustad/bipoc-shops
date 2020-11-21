@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <link rel="shortcut icon" type="image/png" href='images/icon.png'/>
+    <title>create</title>
+  </head>
+  <body class='category-page'>
+    <div class="loader"></div>
+    <a href='index.html'>
+      <img style='width: 50px' src='images/home.png' />
+    </a>
+    <div class='page-title'>
+      <div class='page-name'>create</div>
+    </div>
+
+    <div class="grid">
+      <a target ='_blank' href='https://www.asinglesuggestion.com/product-page/prosper-gift-set'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/asinglesuggestion.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://bookshop.org/books/words-to-live-by/9781797201054'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/wordstoliveby.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.etsy.com/listing/257489150/large-concrete-planter-vessel-catchall?ref=shop_home_active_26&crt=1'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/madebyrheal.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.etsy.com/shop/HortikiPlants?ref=simple-shop-header-name&listing_id=693184774'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/hortikiplants.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.clare.com/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/clare.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.heartberry.com/collections/all/products/woodlands-greeting-card-pack'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/heartberry.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://puzzlehuddle.com/'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/puzzlehuddle.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.addierawr.com/shop?category=Gifts+%2420+and+under'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/addierawr.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.knitssoyandmetal.com/product-page/embroidery-kit'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/knitssoyandmetal.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.greenhousemercantile.com/product/worthwhile-paper-sunrise-pattern-notebook/138?cs=true'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/greenhouse.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.etsy.com/listing/591083987/africa-cookie-cutter-nelson-mandela?ref=shop_home_active_23'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/cookiecutter.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.seedmailseed.co/pages/home'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/seedmailseed.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://jane.com/deal/1186404/holiday-giant-table-top-coloring-pages'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/jane.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.seedmailseed.co/collections/magnets-1'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/magnet.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://flyfabricsourcing.com/collections/all-fabrics'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/flyfabricsourcing.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.bioglitz.co/shop/explorer-pack'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/bioglitz.png' />
+        </div>
+      </a>
+      <a target ='_blank' href='https://www.knitssoyandmetal.com/book-online'>
+        <div class ='page-link grid-item'>
+          <img style='width: 160px' src='images/create/candlemaking.png' />
+        </div>
+      </a>
+    </div>
+
+    <script>
+      $(window).load(function() {
+        $(".loader").fadeOut("slow");
+      });
+      $('.grid').imagesLoaded(function(){
+        $('.grid').masonry({
+          itemSelector: '.grid-item',
+          columnWidth: 170
+        });
+      });
+    </script>
+  </body>
+</html>
