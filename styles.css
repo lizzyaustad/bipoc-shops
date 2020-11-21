@@ -4,16 +4,16 @@ body {
 .banner {
   margin: auto;
   background-color: rgb(241,103,31);
-  width: 65%;
+  width: 85%;
   text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
   padding: 10px;
   color: white;
 }
 .banner-line {
   margin: auto;
   background-color: rgb(218,218,218);
-  width: 65%;
+  width: 85%;
   height: 5px;
 }
 .categories {
@@ -45,6 +45,7 @@ body {
   border-style: double;
   font-size: 16.5px;
   font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
 }
 @media (min-width: 408px) {
   .category-row {
@@ -116,12 +117,22 @@ footer {
   bottom: 0;
   text-align: center;
 }
+.instagram {
+  float: left;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  font-family: serif;
+  text-decoration: none;
+  color: black;
+}
 .donate {
   margin: auto;
   width: 300px;
   background-color: rgb(241,103,31);
   color: white;
   padding: 10px;
+  font-weight: bold;
 }
 
 .category-page {
