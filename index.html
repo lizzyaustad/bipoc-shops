@@ -11,6 +11,7 @@
     </script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 
     <!-- jQuery library -->
@@ -25,6 +26,12 @@
   <body>
     <div class='banner'>
       <h1>BIPOC GIFT GUIDE</h1>
+      <div id='menu-links'>
+        <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSelEN01uTKnHPvketcVzMn7ZR4q3TMBKRCpYIKwq_Zpfw8cAg/viewform'>Suggest a Product</a>
+      </div>
+      <a href='javascript:void(0);' class='menu-icon'>
+        <i class='fa fa-bars'></i>
+      </a>
     </div>
     <div class='banner-line'></div>
     <div class='banner'>
@@ -106,5 +113,11 @@
         </div>
       </a>
     </footer>
+
+    <script>
+      $('.menu-icon').click(function () {
+        $('#menu-links').toggle();
+      })
+      </script>
   </body>
 </html>
